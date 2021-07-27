@@ -9,9 +9,9 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
-            // backgroundImage: (theme) => ({
-            //     'header-background': "url('/docs/images/Head_background.png')",
-            // }),
+            backgroundImage: (theme) => ({
+                'header-background': "url('/docs/images/Block_image.png')",
+            }),
             colors: {
                 gray: {
                     1000: '#0A0A0A',
