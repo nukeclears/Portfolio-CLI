@@ -42,4 +42,4 @@ function watchTask() {
 
 exports.default = series(cssTask, browsersyncServe, watchTask);
 exports.css = cssTask;
-exports.images = imageminTask;
+//exports.images = imageminTask;
