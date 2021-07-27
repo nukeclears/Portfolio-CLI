@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     enabled: true,
-    content: ["./docs/**/*.css", "./**/*.html"],
+    content: ["./docs/styles/*.css", "./docs/*.html", "./docs/components/*.js"],
   },
   safelist: ['dark'],
     darkMode: 'class',
@@ -35,21 +35,10 @@ module.exports = {
                         'background-position': 'right center',
                     },
                 },
-                'gradient-y': {
-                    '0%': {
-                        'background-size': '200% 200%',
-                        'background-position': 'bottom center',
-                    },
-                    '100%': {
-                        'background-size': '200% 200%',
-                        'background-position': 'top center',
-                    },
-                },
             },
             animation: {
                 dropin: 'dropin 1s ease-out',
                 'gradient-x': 'gradient-x 7s ease',
-                'gradient-y': 'gradient-y 7s ease',
             },
         },
         fontFamily: {

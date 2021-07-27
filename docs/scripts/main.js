@@ -1,3 +1,12 @@
+import { Block } from '../components/overviewblocks.js';
+
+document.addEventListener('DOMContentLoaded', function() {
+  const blocks = document.querySelectorAll('[role=blockelement]');
+  blocks.forEach(block => {
+    new Block(block);
+  });
+});
+
 const body = document.getElementById('body')
 
 if (

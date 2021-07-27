@@ -75,22 +75,21 @@
               <h2 class="section_title">Blocks</h2>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-12 lg:gap-24">
-              <a class="flex flex-col justify-between h-96 border-2 rounded-xl transform hover:scale-105 transition-transform group border-red-500 dark:border-cyan-500" href="#">
-                <div class="overflow-hidden rounded-t-xl bg-red-500 dark:bg-cyan-500">
-                  <div class="opacity-90 lg:opacity-80 transition-opacity duration-200 object-cover h-full w-full group-hover:opacity-100">
-                   <img src="./images/Block_image.png">
-                  </div>
-                </div>
-                <div class="flex flex-col gap-4 rounded-b-xl px-8 lg:px-12 py-6 lg:py-8 bg-gray-100 dark:bg-gray-800">
-                  <p class="select-all text-lg lg:text-xl font-display font-bold uppercase text-red-500 dark:text-cyan-500">
-                    Etiam ut purus mattis
-                  </p>
-                  <p class="select-all text-base lg:text-lg font-body dark:text-white text-black">
-                    Quisque id mi. Fusce commodo aliquam arcu. Praesent egestas neque eu enim. Praesent
-                    venenatis metus at tortor pulvinar varius.
-                  </p>
-                </div>
-              </a>
+              <div
+                role="blockelement"
+                data-title="Etiam ut purus mattis" 
+                data-text="Quisque id mi. Fusce commodo aliquam arcu. Praesent egestas neque eu enim. Praesentvenenatis metus at tortor pulvinar varius.">
+              </div>
+              <div
+                role="blockelement"
+                data-title="Cras non dolor" 
+                data-text="Pellentesque posuere. Donec mollis hendrerit risus. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci.">
+              </div>
+              <div
+                role="blockelement"
+                data-title="Cras risus ipsum faucibus ut" 
+                data-text="Donec sodales sagittis magna. In ut quam vitae odio lacinia tincidunt. Pellentesque auctor neque nec urna.">
+              </div>
             </div>
           </div>
         </div>
@@ -217,7 +216,7 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 
   </html>
