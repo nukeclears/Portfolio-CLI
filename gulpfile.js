@@ -2,7 +2,6 @@
 const { watch, series, src, dest } = require("gulp");
 var browserSync = require("browser-sync").create();
 var postcss = require("gulp-postcss");
-var postcssNesting =  require('postcss-nesting');
 const imagemin = require("gulp-imagemin");
 
 // css
@@ -14,12 +13,12 @@ function cssTask(cb) {
     cb();
 }
 
-// function imageminTask(cb) {
-//     return src("./assets/images/*")
-//         .pipe(imagemin())
-//         .pipe(dest("./assets/images"));
-//     cb();
-// }
+function imageminTask(cb) {
+    return src("./docs/images/*")
+        .pipe(imagemin())
+        .pipe(dest("./docs/images"));
+    cb();
+}
 
 // Serve from browserSync server
 function browsersyncServe(cb) {
@@ -43,4 +42,4 @@ function watchTask() {
 
 exports.default = series(cssTask, browsersyncServe, watchTask);
 exports.css = cssTask;
-//exports.images = imageminTask;
+exports.images = imageminTask;
