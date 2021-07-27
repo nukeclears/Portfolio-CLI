@@ -1,10 +1,33 @@
-import { Block } from '../components/overviewblocks.js';
+import { overviewblock } from '../components/overviewblocks.js';
+import { infoblock } from '../components/infoblocks.js';
+import { detailblock } from '../components/detailblocks.js';
 
-document.addEventListener('DOMContentLoaded', function() {
-  const blocks = document.querySelectorAll('[role=blockelement]');
-  blocks.forEach(block => {
-    new Block(block);
-  });
+function overviewblock_generator() {
+    const overviewblocks = document.querySelectorAll('[role=blockelement]');
+    overviewblocks.forEach(singleoverviewblock => {
+        new overviewblock(singleoverviewblock);
+    });
+}
+
+function infoblock_generator() {
+    const infoblocks = document.querySelectorAll('[role=infoelement]');
+    infoblocks.forEach(singleinfoblock => {
+        new infoblock(singleinfoblock);
+    });
+}
+
+function detailblock_generator() {
+    const detailblocks = document.querySelectorAll('[role=detailelement]');
+    detailblocks.forEach(singledetailblock => {
+        new detailblock(singledetailblock);
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    overviewblock_generator();
+    infoblock_generator();
+    detailblock_generator();
 });
 
 const body = document.getElementById('body')
