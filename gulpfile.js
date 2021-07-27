@@ -9,7 +9,7 @@ const imagemin = require("gulp-imagemin");
 function cssTask(cb) {
     return src("./docs/styles/*.css") // read directory
         .pipe(postcss()) // compile with postcss
-        .pipe(dest("./assets/css")) // output
+        .pipe(dest("./docs/compiled")) // output
         .pipe(browserSync.stream());
     cb();
 }
@@ -25,8 +25,8 @@ function cssTask(cb) {
 function browsersyncServe(cb) {
     browserSync.init({
         server: {
-            baseDir: "./",
-            index: "./docs/index.html"
+            baseDir: "./docs/",
+            index: "index.html"
         },
     });
     cb();

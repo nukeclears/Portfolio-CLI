@@ -206,6 +206,7 @@ Correct the inability to style clickable types in iOS and Safari.
 
 button,
 [type='button'],
+[type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
 }
@@ -571,6 +572,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .static {
   position: static;
 }
@@ -614,6 +619,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
@@ -682,6 +691,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.border-collapse {
+  border-collapse: collapse;
 }
 
 .transform {
@@ -859,6 +872,10 @@ video {
           user-select: all;
 }
 
+.resize {
+  resize: both;
+}
+
 .grid-flow-row {
   grid-auto-flow: row;
 }
@@ -1008,7 +1025,7 @@ video {
 }
 
 .bg-header-background {
-  background-image: url('/docs/images/Block_image.png');
+  background-image: url('../images/Block_image.png');
 }
 
 .from-gray-100 {

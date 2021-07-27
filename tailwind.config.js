@@ -10,7 +10,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: (theme) => ({
-                'header-background': "url('/docs/images/Block_image.png')",
+                'header-background': "url('../images/Block_image.png')",
             }),
             colors: {
                 gray: {
