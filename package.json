@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn postcss ./src/**/*.css --base src --dir ./dist -w"
+    //"start": "yarn postcss ./src/**/*.css --base src --dir ./dist -w"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
