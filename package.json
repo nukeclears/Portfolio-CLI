@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/nukeclears/Portfolio-CLI#readme",
   "devDependencies": {
-    "postcss": "^8.3.6",
+    "autoprefixer": "^10.3.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.7"
   }
 }
