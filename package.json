@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-cli",
+  "version": "1.0.0",
+  "description": "cli testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nukeclears/Portfolio-CLI.git"
+  },
+  "author": "Thomas van Deursen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nukeclears/Portfolio-CLI/issues"
+  },
+  "homepage": "https://github.com/nukeclears/Portfolio-CLI#readme",
+  "devDependencies": {
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
