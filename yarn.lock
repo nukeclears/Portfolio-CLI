@@ -5901,6 +5901,7 @@ fsevents@~2.3.2:
     gulp-postcss: ^9.0.0
     postcss-cli: ^8.3.1
     postcss-import: ^14.0.2
+    postcss-nesting: ^8.0.1
     tailwindcss: ^2.2.7
   languageName: unknown
   linkType: soft
@@ -6003,6 +6004,15 @@ fsevents@~2.3.2:
   peerDependencies:
     postcss: ^8.1.13
   checksum: 88d97fe3b4f2384ece10ad3c92b626b095830c2dc0c762b69f25261dba122e283d4f86571de50f0d56c8cff77ae94639e64f00d250518ecf2ee9abc290642648
+  languageName: node
+  linkType: hard
+
+"postcss-nesting@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "postcss-nesting@npm:8.0.1"
+  peerDependencies:
+    postcss: ^8
+  checksum: a96a4ef4c0a485477dbd8e262121d6423b95f2f68a6265a2d722a12700e889276a798e4db7e47bf5e6afb86aec3cc335518564edca8d655b54831cc9eaa0459e
   languageName: node
   linkType: hard
 

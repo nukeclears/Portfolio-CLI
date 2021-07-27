@@ -2,11 +2,12 @@
 const { watch, series, src, dest } = require("gulp");
 var browserSync = require("browser-sync").create();
 var postcss = require("gulp-postcss");
+var postcssNesting =  require('postcss-nesting');
 const imagemin = require("gulp-imagemin");
 
 // css
 function cssTask(cb) {
-    return src("./src/styles/*.css") // read directory
+    return src("./docs/styles/*.css") // read directory
         .pipe(postcss()) // compile with postcss
         .pipe(dest("./assets/css")) // output
         .pipe(browserSync.stream());
@@ -25,6 +26,7 @@ function browsersyncServe(cb) {
     browserSync.init({
         server: {
             baseDir: "./",
+            index: "./docs/index.html"
         },
     });
     cb();
@@ -37,7 +39,7 @@ function browsersyncReload(cb) {
 
 function watchTask() {
     watch("./**/*.html", series(cssTask, browsersyncReload));
-    watch(["./src/styles/*.css"], series(cssTask, browsersyncReload));
+    watch(["./docs/styles/*.css"], series(cssTask, browsersyncReload));
 }
 
 exports.default = series(cssTask, browsersyncServe, watchTask);
