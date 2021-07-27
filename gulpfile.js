@@ -37,7 +37,7 @@ function browsersyncReload(cb) {
 }
 
 function watchTask() {
-    watch(["./**/*", "!./docs/compiled"], series(cssTask, browsersyncReload));
+    watch(["./**/*", "!./docs/compiled", "!./node_modules"], series(cssTask, browsersyncReload));
 }
 
 exports.default = series(cssTask, browsersyncServe, watchTask);
